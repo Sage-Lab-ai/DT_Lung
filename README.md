@@ -187,16 +187,16 @@ project-root/
 │   ├── __init__.py
 │   ├── GRU_inference.py
 │   ├── XGB_inference.py
-│   ├── reformat.py                         # For enhancement on readability for general users
-│   ├── visualization.py                    # Helper functions for DT visualization
-├── Dockerfile                              # Defines the container image
-├── docker_build.sh                         # Build Docker image
-├── docker_run_app.sh                       # Running Docker container for web-app on MacOS/Linux
-├── docker_run_app.bat                      # Running Docker container for web-app on Windows
-├── docker_run_main.sh                      # Running Docker container for main service on MacOS/Linux
-├── docker_run_main.bat                     # Running Docker container for main service on Windows
-├── requirements.txt                        # System requirements
-├── GLOSSARY.md                             # for units, data range references for users, acronyms, and domain terms
+│   ├── reformat.py                          # For enhancement on readability for general users
+│   ├── visualization.py                     # Helper functions for DT visualization
+├── Dockerfile                               # Defines the container image
+├── docker_build.sh                          # Build Docker image
+├── docker_run_app.sh                        # Running Docker container for web-app on MacOS/Linux
+├── docker_run_app.bat                       # Running Docker container for web-app on Windows
+├── docker_run_main.sh                       # Running Docker container for main service on MacOS/Linux
+├── docker_run_main.bat                      # Running Docker container for main service on Windows
+├── requirements.txt                         # System requirements
+├── GLOSSARY.md                              # for units, data range references for users, acronyms, and domain terms
 ├── docs
 ├── assets
 ```
@@ -208,25 +208,25 @@ This project follows a custom naming convention for model configurations and var
 
 A breath setup defines which breaths are included as input and output data to the model. They include:
 
-`A1_A2` Setups for Static digital lung forecasting:
+`A1_A2` Setups for Static Digital Lung Forecasting:
 
 - `A1F50_A2F50`
 - `A1F50L50_A2F50`
 - `N1L20A1F50L50_A2F50`
 
-`A1PA2_A3` Setups for Static digital lung forecasting:
+`A1PA2_A3` Setups for Static Digital Lung Forecasting:
 
 - `A1F50PA2F50_A3F50`
 - `A1F50L50PA2F50_A3F50`
 - `N1L20A1F50L50PA2F50_A3F50`
 
-`A1_A3` Setups for Static digital lung forecasting:
+`A1_A3` Setups for Static Digital Lung Forecasting:
 
 - `A1F50_A3F50`
 - `A1F50L50_A3F50`
 - `N1L20A1F50L50_A3F50`
 
-`A1A2_A3` Setups for Dynamic digital lung forecasting: 
+`A1A2_A3` Setups for Dynamic Digital Lung Forecasting: 
 
 - `A1F50A2F50_A3F50`
 - `A1F50L50A2F50_A3F50`
@@ -261,7 +261,7 @@ Due to a large number of parameters, see [`GLOSSARY.md`](https://github.com/Sage
 ---
 ## 🤖 Inference (Create digital twins using your data📊🫁)
 
-All trained models related developed in this project can be found on our [HuggingFace Model Reposotory](https://huggingface.co/SageLabUHN/DT_Lung).
+All trained models developed in this project can be found on our [HuggingFace Model Repository](https://huggingface.co/SageLabUHN/DT_Lung).
 We also provide a [demo dataset](https://huggingface.co/datasets/SageLabUHN/DT_Lung_Demo_Data) on HuggingFace for users to try out our digital twin models.
 
 We provide four distinct methods in the [Getting Started](#getting-started) section to run DT inference for creating digital twins of human lungs using either our demo data or your own data!
