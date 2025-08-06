@@ -13,7 +13,7 @@
     <img alt="Colab: DT Lung Demo"
          src="https://img.shields.io/badge/Colab-DT%20Lung%20Demo-orange?logo=google-colab" />
   </a>
-  <a href="https://share.streamlit.io/your-app">
+  <a href="https://dt-lung.streamlit.app/">
     <img alt="Streamlit Web App"
          src="https://img.shields.io/badge/Streamlit-Web%20App-red?logo=streamlit" />
   </a>
