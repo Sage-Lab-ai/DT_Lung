@@ -280,7 +280,7 @@ We provide four distinct methods in the [Getting Started](#getting-started) sect
 
 Interested in staying up-to-date with our work? Join our mailing list here: [Mailing List](https://forms.gle/saQ63UqN8REozCom8)
 
-Encounter issues? Report issues [here]() or email us at sagelabuhn@gmail.com
+If you encounter any bugs or have ideas for improvement, please file an issue here: [Open a new issue](link)
 
 
 
