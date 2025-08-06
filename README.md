@@ -5,7 +5,7 @@
     <img alt="Project Page"
          src="https://img.shields.io/badge/Project-Page-blue" />
   </a>
-  <a href="[https://github.com/your-repo](https://github.com/Sage-Lab-ai/DT_Lung)">
+  <a href="https://github.com/Sage-Lab-ai/DT_Lung">
     <img alt="GitHub Code"
          src="https://img.shields.io/badge/GitHub-Code-black?logo=github" />
   </a>
