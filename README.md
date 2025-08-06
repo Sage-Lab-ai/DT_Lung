@@ -9,7 +9,7 @@
     <img alt="GitHub Code"
          src="https://img.shields.io/badge/GitHub-Code-black?logo=github" />
   </a>
-  <a href="https://colab.research.google.com/drive/1EsiyQ0c0HK2p3X3w2nd8E0J7ag9dyV9T?usp=sharing">
+  <a href="https://colab.research.google.com/drive/1IrzccQ09mP5amxQTZy07n4LgLSC2r1uj?usp=sharing">
     <img alt="Colab: DT Lung Demo"
          src="https://img.shields.io/badge/Colab-DT%20Lung%20Demo-orange?logo=google-colab" />
   </a>
