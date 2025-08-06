@@ -41,21 +41,29 @@ This is the official repository for **Digital Twins of Ex Vivo Human Lungs**. <b
 
 ---
 ## Table of Contents
-- [Overview and Motivation](#overview-and-motivation)
+- [Background and Motivation](#background-and-motivation)
 - [Getting Started](#getting-started)
   - [🐍 Python users](#python-users)
   - [🐳 Running with Docker](#running-with-docker)
+    - [Prerequisites](#prerequisites)
     - [For MacOS/Linux users](#for-macoslinux-users)
     - [For Windows users](#for-windows-users)
   - [📒 Google Colab Demo](#google-colab-demo)
-  - [🌐 Web-based app (for non-technical users)](#web-based-app-for-non-technical-users)
+  - [🌐 Web-based App (Code-free Deployment)](#web-based-app-for-non-technical-users)
 - [DT Workflow](#dt-workflow)
-  - [Code structure](#code-structure)
+  - [Code Structure](#code-structure)
   - [Naming convention](#naming-convention)
     - [GRU model training setups](#gru-model-training-setups)
     - [GRU model variables](#gru-model-variables)
     - [XGBoost model training setups](#xgboost-model-training-setups)
     - [XGBoost model variables](#xgboost-model-variables)
+- [🤖 Inference](#inference)
+- [🛠️ Troubleshooting Errors](#troubleshooting-errors)
+  - [Web-app](#web-app)
+  - [Docker](#docker)
+  - [Colab](#colab)
+- [📢 Stay up-to-date & 🐞 Report Issues](#stay-up-to-date-report-issues)
+
 
 ---
 ## Background and Motivation
@@ -178,15 +186,15 @@ project-root/
 │   ├── pipelines.py
 │   ├── inference.py
 │   ├── forecasting_pipeline.py
-│   ├── Image PC.py   # update name change
-│   ├── Image PC.py   # update name change
-│   ├── Image PC.py   # update name change
-│   ├── Image PC.py   # update name change
+│   ├── image_gridsearch_static.py   
+│   ├── image_gridsearch_dynamic.py   
+│   ├── image_train_static.py   
+│   ├── image_train_dynamic.py   
 │   ├── utils.py
 ├── inference
 │   ├── __init__.py
-│   ├── GRU_inference.py
-│   ├── XGB_inference.py
+│   ├── GRU_inference.py                     # Pipeline for all GRU-based model inference
+│   ├── XGB_inference.py                     # Pipeline for all XGB-based model inference
 │   ├── reformat.py                          # For enhancement on readability for general users
 │   ├── visualization.py                     # Helper functions for DT visualization
 ├── Dockerfile                               # Defines the container image
@@ -259,6 +267,7 @@ The variable defines which parameter will be forecasted. They include:
 Due to a large number of parameters, see [`GLOSSARY.md`](https://github.com/Sage-Lab-ai/DT_Lung/blob/main/GLOSSARY.md) for all abbreviation definitions.
 
 ---
+<a name="inference"></a>
 ## 🤖 Inference (Create digital twins using your data📊🫁)
 
 All trained models developed in this project can be found on our [HuggingFace Model Repository](https://huggingface.co/SageLabUHN/DT_Lung).
@@ -267,6 +276,7 @@ We also provide a [demo dataset](https://huggingface.co/datasets/SageLabUHN/DT_L
 We provide four distinct methods in the [Getting Started](#getting-started) section to run DT inference for creating digital twins of human lungs using either our demo data or your own data!
 
 ---
+<a name="troubleshooting-errors"></a>
 ## 🛠️ Troubleshooting Errors
 
 ### Web-app
@@ -276,11 +286,12 @@ We provide four distinct methods in the [Getting Started](#getting-started) sect
 ### Colab 
 
 ---
+<a name="stay-up-to-date-report-issues"></a>
 ## 📢 Stay up-to-date & 🐞 Report Issues
 
 Interested in staying up-to-date with our work? Join our mailing list here: [Mailing List](https://forms.gle/saQ63UqN8REozCom8)
 
-If you encounter any bugs or have ideas for improvement, please file an issue here: [Open a new issue]([link](https://github.com/Sage-Lab-ai/DT_Lung/issues/new/choose))
+If you encounter any bugs or have ideas for improvement, please file an issue here: [Open a new issue](https://github.com/Sage-Lab-ai/DT_Lung/issues/new/choose)
 
 
 
