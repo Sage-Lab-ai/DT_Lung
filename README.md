@@ -1,3 +1,13 @@
+
+<p align="center">
+  <img
+    src="assets/icon.svg"
+    alt="Respiratory Rate"
+    width="72"
+    height="72"
+  />
+</p>
+
 <h1 align="center">Digital Twins of Ex Vivo Human Lungs</h1>
 
 <p align="center">
@@ -17,7 +27,7 @@
     <img alt="Streamlit Web App"
          src="https://img.shields.io/badge/Streamlit-Web%20App-red?logo=streamlit" />
   </a>
-  <a href="https://huggingface.co/SageLabUHN/DT_Lung/tree/main">
+  <a href="https://huggingface.co/SageLabUHN/DT_Lung">
     <img alt="Hugging Face Model"
          src="https://img.shields.io/badge/HuggingFace-Model-yellow?logo=huggingface" />
   </a>
@@ -28,11 +38,6 @@
 </p>
 
 This is the official repository for **Digital Twins of Ex Vivo Human Lungs**. <br />
-
----
-## Updates
-
-Interested in staying up-to-date with our work? Join our mailing list here: [Mailing List](https://forms.gle/saQ63UqN8REozCom8)
 
 ---
 ## Table of Contents
@@ -54,11 +59,19 @@ Interested in staying up-to-date with our work? Join our mailing list here: [Mai
 
 ---
 ## Background and Motivation
-Here we provide the code files used to develop the digital twin model of human ex vivo lungs using the world's largest dataset on human ex vivo lung function. The digital lung model can accurately forecast ex vivo human lung function.
+Ex vivo lung perfusion (EVLP) is a cutting-edge platform that maintains isolated human lungs in a physiologically active state outside the body, enabling comprehensive functional assessment and targeted therapeutic interventions. The concept of a “digital twin” – a dynamic, high-fidelity computational replica of a physical system – is rapidly gaining traction in medicine for its ability to simulate complex biological processes in silico.
 
-Ex vivo lung perfusion system
+Leveraging these advances, we have curated the world’s largest annotated dataset of ex vivo human lungs. Using this rich dataset, our digital twin of ex vivo human lungs accurately forecasts over 75 key parameters of lung function (e.g., compliance, gas exchange, etc.) and has been validated as a robust digital control for preclinical therapeutics.
 
-https://github.com/user-attachments/assets/44dfc3fb-8aa8-4313-8ab7-e8e937f0e057
+This repository contains the complete end-to-end pipeline, including model training scripts, inference modules, Docker containers, and an interactive web application, aiming to make the repository transparent, user-friendly, and conducive to further inspection, validation, and improvement by the broader research community.
+
+**Ex vivo lung perfusion system**
+
+
+
+https://github.com/user-attachments/assets/a3ea7f0d-7cdf-4c05-a6a0-160356bb3d40
+
+
 
 ---
 ## Getting Started
@@ -70,27 +83,18 @@ https://github.com/user-attachments/assets/44dfc3fb-8aa8-4313-8ab7-e8e937f0e057
    ````
    git clone https://github.com/Sage-Lab-ai/DT_Lung.git
    ````
-4. Download all trained models from huggingface:
-   ````
-   from huggingface_hub import snapshot_download
-   snapshot_download(repo_id= 'sagelab/DT_Lung', local_dir='./DT_Lung/Model', local_dir_use_symlinks=False)
-   ````
-   **Make sure the `Model` folder is in `work_dir/DT_Lung/` for proper execution of DT inference.**
-6. Download demo data from huggingface:
-   ````
-   from huggingface_hub import snapshot_download
-   snapshot_download(repo_id="SageLabUHN/DT_Lung_Demo_Data",
-                     repo_type="dataset",
-                     local_dir="work_dir/DT_Lung/Data/",
-                      local_dir_use_symlinks=False)
-   ````
-   **Make sure the `Data` folder is in `work_dir/DT_Lung/` for proper execution of DT inference using demo data.**
-8. All system requirements are listed in the requirements.txt file. To set up the environment, please run: <br />
+4. All system requirements are listed in the requirements.txt file. To set up the environment, please run: <br />
    ````
    pip install -r requirements.txt
    ````
-10. Run the `main.py` file
-11. Review DT results in the `work_dir/DT_Lung/Output` (Your digital twins have been built! :white_check_mark:)
+5. Run the `main.py` script <br />
+   ````
+   python main.py
+   ````
+   **Note**: Model weights and demo data are fetched automatically—no manual setup required.<br /> 
+
+6. Once completed, your digital twins using demo data have been built! :white_check_mark:<br />
+   DT results will be saved to `work_dir/DT_Lung/Output`. Please view results in the `Output` folder. 
 
 <a name="running-with-docker"></a>
 ### 2. :whale: Running with Docker
@@ -111,6 +115,14 @@ This repository provides ready-to-use helper scripts to launch both the web appl
    ````
    ./docker_run_main.sh
    ````
+  To grant execute permission to Docker start scripts, please run:
+   ````
+   chmod +x docker_run_app.sh
+   ````
+  OR
+  ````
+   chmod +x docker_run_main.sh
+   ````
 
   #### For Windows users
  
@@ -120,16 +132,16 @@ This repository provides ready-to-use helper scripts to launch both the web appl
 
 <a name="google-colab-demo"></a>
 ### 3. :ledger: Google Colab Demo
-[🚀 Launch in Colab](https://colab.research.google.com/drive/1IrzccQ09mP5amxQTZy07n4LgLSC2r1uj?usp=sharing) contains the demo with pre-written code on how to build a digital twin using our demo data: no code edit or local environment setup required. 
+[🚀 Launch in Colab](https://colab.research.google.com/drive/1IrzccQ09mP5amxQTZy07n4LgLSC2r1uj?usp=sharing) contains the demo with pre-written code cells on how to build a digital twin using our demo data: no code edit or local environment setup required. 
 
 <a name="web-based-app-for-non-technical-users"></a>
-### 4. :globe_with_meridians: Web-based App (Code-free deployment)
+### 4. :globe_with_meridians: Web-based App (Code-free Deployment)
 The web-app offers an easy-to-follow user interface for seamless DT development that can be tailored to lung-specific conditions at the tip of your finger. <br />
-[🚀 Launch DT Web-app](link) - Link to be updated
+[🚀 Launch DT Web-app](https://dt-lung.streamlit.app/)
 
 #### App demo
-***Add a gif image of the app interface here***
-Add recommended ranges of parameters, show this on the app.
+
+<img width="1647" height="1138" alt="Screenshot 2025-08-06 at 3 42 28 PM" src="https://github.com/user-attachments/assets/3cc65041-85fe-4731-9931-53bb5d40da35" />
 
 ---
 ## DT Workflow
@@ -139,27 +151,25 @@ Add recommended ranges of parameters, show this on the app.
 
 ---
 
-### Code structure 
+### Code Structure
 
-The DT model is built using two machine learning model architectures: gated recurrent unit (GRU) and XGBoost (XGB). In this repository, code files are organized and presented as shown below: <br />
-The code files for model training are organized under the corresponding folders `GRU` and `XGB`. Under each folder, there are..... <br />
-The inference files are included under the inference folder. If you wish to run inference to build your own DT model, please do so by simply running main.py. We have simplified the woekflow for python users!
+The digital-twin pipeline in this repository is implemented using two core machine learning architectures: gated recurrent units (GRU) and XGBoost (XGB). The `GRU/` and `XGB/` directories each contain everything needed for model training, including data loading and preprocessing scripts, model architecture definitions and calibration, and utility functions that support the training pipeline. 
+
+All inference scripts are located in the `inference/` folder, which provides code to load a trained model and generate predicted lung function parameters. For detailed instructions on running inference and building your own digital twin, please see the [Getting Started](#getting-started) section above and choose the inference method (command-line, Docker, Google Colab, or web-based app) that best suits you.  
 
 ```bash
 project-root/
-├── main.py
-├── GRU                                        # GRU model development 
+├── main.py                                    # Primary entry point for the DT_Lung pipeline
+├── GRU                                        # Pipeline on GRU model training and calibration 
 │   ├── __init__.py  
 │   ├── scripts
 │   ├── util
-│   │   ├── baselines.py
-│   │   ├── static_feats.py
 │   ├── EVLPMultivariateBreathDataset.py
 │   ├── forecast_parameters.py
 │   ├── forecast_parameters_w_pred.py
 │   ├── forecasting_pipeline.py
 │   ├── GRU.py
-├── XGB                                       # XGboost model development 
+├── XGB                                       # Pipeline on XGBoost model training and calibration
 │   ├── __init__.py
 │   ├── BaselineModels.py
 │   ├── Dataset.py
@@ -177,16 +187,18 @@ project-root/
 │   ├── __init__.py
 │   ├── GRU_inference.py
 │   ├── XGB_inference.py
-│   ├── XGB_inference_step2.py
-│   ├── XGB_PC_dynamic.py
-│   ├── XGB_PC_static.py                 # inference run for 
-│   ├── data_reforamt.py                 # helper functions for enhanced UI readbility
-├── Dockerfile
-├── start_docker.sh                      # Running Docker on MacOS/Linux
-├── start_docker.bat                     # Running Docker on Windows
-├── requirements.txt                     # System requirements
-├── GLOSSARY.md                          # for units, ranges, acronyms, and domain terms
-
+│   ├── reformat.py                         # For enhancement on readability for general users
+│   ├── visualization.py                    # Helper functions for DT visualization
+├── Dockerfile                              # Defines the container image
+├── docker_build.sh                         # Build Docker image
+├── docker_run_app.sh                       # Running Docker container for web-app on MacOS/Linux
+├── docker_run_app.bat                      # Running Docker container for web-app on Windows
+├── docker_run_main.sh                      # Running Docker container for main service on MacOS/Linux
+├── docker_run_main.bat                     # Running Docker container for main service on Windows
+├── requirements.txt                        # System requirements
+├── GLOSSARY.md                             # for units, data range references for users, acronyms, and domain terms
+├── docs
+├── assets
 ```
 
 ### Naming convention
@@ -246,12 +258,29 @@ The variable defines which parameter will be forecasted. They include:
 
 Due to a large number of parameters, see [`GLOSSARY.md`](https://github.com/Sage-Lab-ai/DT_Lung/blob/main/GLOSSARY.md) for all abbreviation definitions.
 
-## Inference (Create digital twins using your data📊🫁)
+---
+## 🤖 Inference (Create digital twins using your data📊🫁)
 
+All trained models related developed in this project can be found on our [HuggingFace Model Reposotory](https://huggingface.co/SageLabUHN/DT_Lung).
+We also provide a [demo dataset](https://huggingface.co/datasets/SageLabUHN/DT_Lung_Demo_Data) on HuggingFace for users to try out our digital twin models.
 
-## Diagnosing Errors
+We provide four distinct methods in the [Getting Started](#getting-started) section to run DT inference for creating digital twins of human lungs using either our demo data or your own data!
 
+---
+## 🛠️ Troubleshooting Errors
 
+### Web-app
+
+### Docker
+
+### Colab 
+
+---
+## 📢 Stay up-to-date & 🐞 Report Issues
+
+Interested in staying up-to-date with our work? Join our mailing list here: [Mailing List](https://forms.gle/saQ63UqN8REozCom8)
+
+Encounter issues? Report issues [here]() or email us at sagelabuhn@gmail.com
 
 
 
