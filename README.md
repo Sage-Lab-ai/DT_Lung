@@ -193,18 +193,18 @@ project-root/
 │   ├── utils.py
 ├── inference
 │   ├── __init__.py
-│   ├── GRU_inference.py                    # Pipeline for all GRU-based model inference
-│   ├── XGB_inference.py                    # Pipeline for all XGB-based model inference
-│   ├── reformat.py                         # For enhancement on readability for general users
-│   ├── visualization.py                    # Helper functions for DT visualization
-├── Dockerfile                              # Defines the container image
-├── docker_build.sh                         # Build Docker image
-├── docker_run_app.sh                       # Running Docker container for web-app on MacOS/Linux
-├── docker_run_app.bat                      # Running Docker container for web-app on Windows
-├── docker_run_main.sh                      # Running Docker container for main service on MacOS/Linux
-├── docker_run_main.bat                     # Running Docker container for main service on Windows
-├── requirements.txt                        # System requirements
-├── GLOSSARY.md                             # for units, data range references for users, acronyms, and domain terms
+│   ├── GRU_inference.py                     # Pipeline for all GRU-based model inference
+│   ├── XGB_inference.py                     # Pipeline for all XGB-based model inference
+│   ├── reformat.py                          # For enhancement on readability for general users
+│   ├── visualization.py                     # Helper functions for DT visualization
+├── Dockerfile                               # Defines the container image
+├── docker_build.sh                          # Build Docker image
+├── docker_run_app.sh                        # Running Docker container for web-app on MacOS/Linux
+├── docker_run_app.bat                       # Running Docker container for web-app on Windows
+├── docker_run_main.sh                       # Running Docker container for main service on MacOS/Linux
+├── docker_run_main.bat                      # Running Docker container for main service on Windows
+├── requirements.txt                         # System requirements
+├── GLOSSARY.md                              # for units, data range references for users, acronyms, and domain terms
 ├── docs
 ├── assets
 ```
