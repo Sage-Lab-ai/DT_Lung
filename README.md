@@ -270,8 +270,8 @@ Due to a large number of parameters, see [`GLOSSARY.md`](https://github.com/Sage
 <a name="inference"></a>
 ## 🤖 Inference (Create digital twins using your data📊🫁)
 
-All trained models developed in this project can be found on our [HuggingFace Model Repository](https://huggingface.co/SageLabUHN/DT_Lung).
-We also provide a [demo dataset](https://huggingface.co/datasets/SageLabUHN/DT_Lung_Demo_Data) on HuggingFace for users to try out our digital twin models.
+All trained models developed in this project can be found in our HuggingFace [Model Repository](https://huggingface.co/SageLabUHN/DT_Lung).
+We also provide a [Demo Dataset](https://huggingface.co/datasets/SageLabUHN/DT_Lung_Demo_Data) on HuggingFace for users to try out our digital twin models.
 
 We provide four distinct methods in the [Getting Started](#getting-started) section to run DT inference for creating digital twins of human lungs using either our demo data or your own data!
 
