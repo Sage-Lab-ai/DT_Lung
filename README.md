@@ -293,7 +293,8 @@ Interested in staying up-to-date with our work? Join our mailing list here: [Mai
 
 If you encounter any bugs or have ideas for improvement, please file an issue here: [Open a new issue](https://github.com/Sage-Lab-ai/DT_Lung/issues/new/choose)
 
-
+## License
+This dataset is released under the **Creative Commons Attribution‑NonCommercial‑ShareAlike 4.0 International (CC BY‑NC‑SA 4.0)** license. Commercial use is **prohibited**.
 
 
 
