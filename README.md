@@ -11,7 +11,7 @@
 <h1 align="center">Digital Twins of Ex Vivo Human Lungs</h1>
 
 <p align="center">
-  <a href="https://your-project-page-url">
+  <a href="https://sage-lab-ai.github.io/DT_Lung/">
     <img alt="Project Page"
          src="https://img.shields.io/badge/Project-Page-blue" />
   </a>
