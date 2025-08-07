@@ -30,15 +30,8 @@ Version: 1.0.0
 | IL-8             | Interleukin-8 (pg/mL)                        | 132 [11-542]     |
 | IL-10            | Interleukin-10 (pg/mL)                       | 12 [1-42]        |
 | IL-1b            | Interleukin-1β (pg/mL)                       | 1.7 [0.03-4.5]   |
-| pca_0            | Lung Xray PC1                                | n/a              |
-| pca_1            | Lung Xray PC2                                | n/a              |
-| pca_2            | Lung Xray PC3                                | n/a              |
-| pca_3            | Lung Xray PC4                                | n/a              |
-| pca_4            | Lung Xray PC5                                | n/a              |
-| pca_5            | Lung Xray PC6                                | n/a              |
-| pca_6            | Lung Xray PC7                                | n/a              |
-| pca_7            | Lung Xray PC8                                | n/a              |
-| pca_8            | Lung Xray PC9                                | n/a              |
-| pca_9            | Lung Xray PC10                               | n/a              |
+| pca_0 - pca_9    | Lung Xray PC1-10                             | n/a              |
+| Gene Enrichment Scores | Transcriptomics Pathways               | Please refer to GSEA official website: [HALLMARK gene sets](https://www.gsea-msigdb.org/gsea/msigdb/collections.jsp)|
+
 
 **Note:** Lung Xray PC values are derived features instead of measured features; no data range available. 
