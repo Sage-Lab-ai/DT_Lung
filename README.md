@@ -124,7 +124,7 @@ This repository provides ready-to-use helper scripts to launch both the web appl
    ./docker_run_app.sh
    ````
 
-  Launch the main service:
+  Launch the main.py to generate results in `Output/`:
    ````
    ./docker_run_main.sh
    ````
