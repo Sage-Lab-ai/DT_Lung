@@ -91,6 +91,11 @@ https://github.com/user-attachments/assets/a3ea7f0d-7cdf-4c05-a6a0-160356bb3d40
    ````
    git clone https://github.com/Sage-Lab-ai/DT_Lung.git
    ````
+3. Create a virtual environment (optional but recommended):
+   ````
+   python -m venv env
+   source env/bin/activate  # On Windows use `env\Scripts\activate`
+   ````
 4. All system requirements are listed in the requirements.txt file. To set up the environment, please run: <br />
    ````
    pip install -r requirements.txt
