@@ -29,12 +29,15 @@
     <img alt="Streamlit Web App"
          src="https://img.shields.io/badge/Streamlit-Web%20App-red?logo=streamlit" />
   </a>
+</p>
+
+<p align="center">
   <a href="https://huggingface.co/SageLabUHN/DT_Lung">
-    <img alt="Hugging Face Model"
+    <img alt="Hugging Face Model"
          src="https://img.shields.io/badge/HuggingFace-Model-yellow?logo=huggingface" />
   </a>
   <a href="https://huggingface.co/datasets/SageLabUHN/DT_Lung_Demo_Data">
-    <img alt="Hugging Face Dataset"
+    <img alt="Hugging Face Dataset"
          src="https://img.shields.io/badge/HuggingFace-Dataset-yellow?logo=huggingface" />
   </a>
 </p>
