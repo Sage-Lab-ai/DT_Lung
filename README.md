@@ -43,13 +43,13 @@ This is the official repository for **Digital Twins of Ex Vivo Human Lungs**. <b
 ## Table of Contents
 - [Background and Motivation](#background-and-motivation)
 - [Getting Started](#getting-started)
-  - [🐍 Python users](#python-users)
+  - [🌐 Web-based App (Code-free Deployment)](#web-based-app-for-non-technical-users)
+  - [📒 Google Colab Notebook](#google-colab-notebook)
   - [🐳 Running with Docker](#running-with-docker)
     - [Prerequisites](#prerequisites)
     - [For MacOS/Linux users](#for-macoslinux-users)
     - [For Windows users](#for-windows-users)
-  - [📒 Google Colab Demo](#google-colab-demo)
-  - [🌐 Web-based App (Code-free Deployment)](#web-based-app-for-non-technical-users)
+  - [🐍 Python users](#python-users)
 - [DT Workflow](#dt-workflow)
   - [Code Structure](#code-structure)
   - [Naming convention](#naming-convention)
@@ -84,8 +84,59 @@ https://github.com/user-attachments/assets/a3ea7f0d-7cdf-4c05-a6a0-160356bb3d40
 ---
 ## Getting Started
 
+<a name="web-based-app-for-non-technical-users"></a>
+### 1. :globe_with_meridians: Web-based App (Code-free Deployment)
+The web-app offers an easy-to-follow user interface for seamless DT development that can be tailored to lung-specific conditions at the tip of your finger. <br />
+[🚀 Launch DT Web-app](https://dt-lung.streamlit.app/)
+
+#### App demo
+
+<img width="1647" height="1138" alt="Screenshot 2025-08-06 at 3 42 28 PM" src="https://github.com/user-attachments/assets/3cc65041-85fe-4731-9931-53bb5d40da35" />
+
+<a name="google-colab-notebook"></a>
+### 2. :ledger: Google Colab Notebook
+[🚀 Launch in Colab](https://colab.research.google.com/drive/1IrzccQ09mP5amxQTZy07n4LgLSC2r1uj?usp=sharing) contains the demo with pre-written code cells on how to build a digital twin using our demo data: no code edit or local environment setup required. 
+
+<a name="running-with-docker"></a>
+### 3. :whale: Running with Docker
+#### Prerequisites:
+[Docker](https://docs.docker.com/get-docker/) must be installed and running on your machine.<br />
+All docker images are published on [Docker Hub](https://hub.docker.com/u/sagelabuhn)
+
+This repository provides ready-to-use helper scripts to launch both the web application and the core main.py service in Docker containers.
+
+  #### For MacOS/Linux users:
+  
+  To grant execute permission to Docker start scripts, please run:
+   ````
+   chmod +x docker_run_app.sh
+   ````
+  OR
+  ````
+   chmod +x docker_run_main.sh
+   ````
+  
+  Run Docker container to host the web-based Streamlit app for a code-free deployment experience of DT demo:
+   ````
+   ./docker_run_app.sh
+   ````
+  Run Docker container to execute main.py to run DT demo locally:
+   ````
+   ./docker_run_main.sh
+   ````
+
+  #### For Windows users
+ 
+  Run Docker container to host the web-based Streamlit app for a code-free deployment experience of DT demo: 
+  
+  Double-click `docker_run_app.bat` in File Explorer.
+  
+  Run Docker container to execute main.py to run DT demo locally: 
+  
+  Double-click `docker_run_main.bat` in File Explorer.
+
 <a name="python-users"></a>
-### 1. :snake: Python users
+### 4. :snake: Python users
 1. This DT model works with Python 3.12. Please make sure you have the correct version of Python installed before getting started.
 2. Clone this repository:
    ````
@@ -107,54 +158,12 @@ https://github.com/user-attachments/assets/a3ea7f0d-7cdf-4c05-a6a0-160356bb3d40
    **Note**: Model weights and demo data are fetched automatically—no manual setup required.<br /> 
 
 6. Once completed, your digital twins using demo data have been built! :white_check_mark:<br />
-   DT results will be saved to `work_dir/DT_Lung/Output`. Please view results in the `Output` folder. 
-
-<a name="running-with-docker"></a>
-### 2. :whale: Running with Docker
-#### Prerequisites:
-[Docker](https://docs.docker.com/get-docker/) must be installed and running on your machine.<br />
-All docker images are published on [Docker Hub](https://hub.docker.com/u/sagelabuhn)
-
-This repository provides ready-to-use helper scripts to launch both the web application and the core main.py service in Docker containers.
-
-  #### For MacOS/Linux users:
-  
-  Launch the web application:
+   DT results will be saved to `work_dir/DT_Lung/Output`. Please view results in the `Output` folder.
+   
+8. Alternatively, you can also host the Streamlit web-based app locally on your machine by running:
    ````
-   ./docker_run_app.sh
+   streamlit run app.py
    ````
-
-  Launch the main.py to generate DT results in `Output/`:
-   ````
-   ./docker_run_main.sh
-   ````
-  To grant execute permission to Docker start scripts, please run:
-   ````
-   chmod +x docker_run_app.sh
-   ````
-  OR
-  ````
-   chmod +x docker_run_main.sh
-   ````
-
-  #### For Windows users
- 
-  Launch the web application: Double-click `docker_run_app.bat` in File Explorer.
-  
-  Run the main service: Double-click `docker_run_main.bat` in File Explorer.
-
-<a name="google-colab-demo"></a>
-### 3. :ledger: Google Colab Demo
-[🚀 Launch in Colab](https://colab.research.google.com/drive/1IrzccQ09mP5amxQTZy07n4LgLSC2r1uj?usp=sharing) contains the demo with pre-written code cells on how to build a digital twin using our demo data: no code edit or local environment setup required. 
-
-<a name="web-based-app-for-non-technical-users"></a>
-### 4. :globe_with_meridians: Web-based App (Code-free Deployment)
-The web-app offers an easy-to-follow user interface for seamless DT development that can be tailored to lung-specific conditions at the tip of your finger. <br />
-[🚀 Launch DT Web-app](https://dt-lung.streamlit.app/)
-
-#### App demo
-
-<img width="1647" height="1138" alt="Screenshot 2025-08-06 at 3 42 28 PM" src="https://github.com/user-attachments/assets/3cc65041-85fe-4731-9931-53bb5d40da35" />
 
 ---
 ## DT Workflow
