@@ -11,9 +11,11 @@
 <h1 align="center">Digital Twins of Ex Vivo Human Lungs</h1>
 
 <p align="center">
+  <img alt="Python Version"
+       src="https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white" />
   <a href="https://sage-lab-ai.github.io/DT_Lung/">
     <img alt="Project Page"
-         src="https://img.shields.io/badge/Project-Page-blue" />
+         src="https://img.shields.io/badge/Project-Page-green" />
   </a>
   <a href="https://github.com/Sage-Lab-ai/DT_Lung">
     <img alt="GitHub Code"
