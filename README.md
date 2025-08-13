@@ -317,9 +317,7 @@ We provide 4 distinct methods in the [Getting Started](#getting-started) section
 
 If the model or demo data fails to download from Hugging Face on the first attempt (often due to high request volume). 
 
-Click **"Optional: Redownload Models and Data"** (as shown in the image below) to try again. Alternatively, you can refresh the web page and retry
-
-<img width="330" height="62" alt="Screenshot 2025-08-11 at 7 41 56 PM" src="https://github.com/user-attachments/assets/bbc4ad13-3685-4c2a-bfcf-11fa12bb2b29" />
+Click **"Optional: Redownload Models and Data"** to try again. Alternatively, you can refresh the web page and retry。
 
 ### Docker
 
