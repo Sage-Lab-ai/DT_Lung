@@ -106,7 +106,7 @@ The web-app offers an easy-to-follow, code-free user interface for seamless DT d
 #### 🎥 App Tutorial
 We also provide a short tutorial to demonstrate how to use the Web-based App.
 
-**Youtube**: [▶️🎬 **Watch the Tutorial**](https://youtu.be/vN3xYlv1Gh8)
+🔴**Youtube**: [▶️🎬 **Watch the Tutorial**](https://youtu.be/vN3xYlv1Gh8)
 
 <a name="google-colab-notebook"></a>
 ### 2. :ledger: Google Colab Notebook
