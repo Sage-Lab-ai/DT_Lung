@@ -1,0 +1,19 @@
+torch==2.3.1+cpu; platform_system=="Linux" and platform_machine!="aarch64"
+torch==2.3.1; platform_system=="Linux" and platform_machine=="aarch64"
+torch==2.3.1; platform_system=="Darwin"
+torch==2.3.1; platform_system == "Windows"
+-f https://download.pytorch.org/whl/cpu/torch_stable.html
+scikit-learn==1.6.0
+numpy==1.26.4
+pandas
+openpyxl
+safetensors
+shap
+tqdm
+xgboost
+wandb
+plotly
+streamlit
+watchdog
+huggingface_hub
+hf_xet

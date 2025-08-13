@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Twins of Ex Vivo Human Lungs</title>
+  <meta name="description" content="Background, model architecture, workflow, deployment, and how to get started." />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#111418; --muted:#5c6a78; --brand:#0a84ff; --border:#e6e8eb; --maxw:1200px; --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif; color:var(--text); background:var(--bg)}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky; top:0; background:#fff; border-bottom:1px solid var(--border); z-index:10}
+    .nav{max-width:var(--maxw); margin:0 auto; padding:12px 16px; display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content: center}
+    .brand{font-weight:700; margin-right:auto}
+    .btn{display:inline-block; padding:6px 10px; border:1px solid var(--border); border-radius:10px; background:#fff; color:var(--text)}
+    .btn:hover{background:#f6f8fb}
+    main{max-width:var(--maxw); margin:24px auto 60px; padding:0 16px}
+    section{border:1px solid var(--border); border-radius:var(--radius); padding:20px; margin:16px 0}
+    h1{font-size:clamp(28px,4vw,40px); margin:12px 0}
+    h2{font-size:clamp(20px,3vw,28px); margin:0 0 8px}
+    p{margin:8px 0}
+    .muted{color:var(--muted)}
+    figure{margin:12px 0}
+    img,video{max-width:100%; height:auto; display:block; border:1px solid var(--border); border-radius:10px}
+    figcaption{font-size:.9rem; color:var(--muted); margin-top:6px}
+    .grid-two{display:grid; grid-template-columns:1fr; gap:12px}
+    @media(min-width:820px){ .grid-two{grid-template-columns:1fr 1fr} }
+    footer{max-width:var(--maxw); margin:40px auto; padding:0 16px; color:var(--muted)}
+    .icon{width:240px; height:240px; margin:0 auto 8px; display:block}
+    .title-block{text-align:center}
+    .banner-header {background-color: #000000; /* your brand blue */
+                    color: #ffffff;
+                    text-align: center;
+                    padding: 24px 12px;}
+    .banner-header h1 {margin: 0; font-size: clamp(28px, 5vw, 42px); font-weight: 700; color: #ffffff}
+  </style>
+</head>
+  
+<body>
+  <!-- Banner Header -->
+  <div class="banner-header">
+    <h1>DT of Human Lungs Project Page</h1>
+  </div>
+
+  <header>
+    <nav class="nav" aria-label="Page">
+      <a class="btn" href="#background">Background</a>
+      <a class="btn" href="#data">Data</a>
+      <a class="btn" href="#conceptandarchitecture"> Conceptualization and Architecture</a>
+      <a class="btn" href="#workflow">DT Workflow</a>
+      <a class="btn" href="#deployment">Deployment</a>
+      <a class="btn" href="#builddt">Build Your DT</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="title-block">
+    <img src="https://github.com/user-attachments/assets/93ec96ef-a358-405d-b207-7eae0a3d1773" alt="Project Icon" class="icon" />
+    <h1>Digital Twins of Ex Vivo Human Lungs</h1>
+    </div>
+
+      <!-- Background -->
+  <section id="background">
+    <h2>Background</h2>
+
+    <p>
+    Ex vivo lung perfusion (EVLP) is a cutting-edge clinical and research platform that maintains human donor lungs in a physiologically active state outside the body. This enables detailed functional assessment of the lungs and targeted therapeutic interventions. <br>
+    Our Digital Twin (DT) project leverages this platform to create a dynamic, high-fidelity computational replica of ex vivo lung function, capable of forecasting over 75 key functional parameters and serving as a powerful tool for biomedical research and preclinical therapeutic optimization.
+    </p>
+  
+    <figure>
+      <img
+        src="https://github.com/user-attachments/assets/8697a77c-4eb9-47fc-8d78-987a70ba5496"
+        alt="Ex Vivo Lung Perfusion System"
+      />
+      <figcaption class="muted">Ex vivo perfusion system overview.</figcaption>
+    </figure>
+
+    <figure>
+      <video controls preload="metadata" style="width:100%;height:auto;display:block;">
+        <source src="https://github.com/user-attachments/assets/5a9f0953-4463-4365-ab75-835a9c625738" type="video/mp4" />
+      </video>
+      <figcaption class="muted"> Human lungs on ex vivo perfusion circuit.</figcaption>
+    </figure>
+
+    <!-- Data -->
+    <section id="data">
+      <h2>Multi-modal Lung Function Data</h2>
+
+      <p>
+      Our DT is built on the world’s largest annotated dataset of ex vivo human lung function, combining high-frequency ventilator waveform recordings, hourly lung function assessment measures, biochemical and protein biomarkers, imaging data, and transcriptomics. 
+      This comprehensive multimodal resource underpins the DT’s design and supports robust model training, calibration, and validation.
+      </p>
+      
+      <figure>
+        <img src="https://github.com/user-attachments/assets/1f30d0c6-6ec6-4496-9d49-5308d3e81d03" alt="Lung Data" />
+        <figcaption> Multi-modal ex vivo lung function data </figcaption>
+      </figure>
+    </section>
+
+
+    <!-- Conceptualizaiton and Architecture -->
+    <section id="conceptandarchitecture">
+      <h2>DT Conceptualization and Architecture</h2>
+      
+      <p>
+      The DT integrates physics-based models, grounded in well-established lung physiology equations, with advanced machine learning approaches.
+        
+      Physics-based components extract metrics such as lung compliance and airway pressures from high-resolution ventilator waveforms, while data-driven models—such as gated recurrent units (GRU) and XGBoost—capture complex temporal and nonlinear patterns. This hybrid approach ensures the DT is both interpretable and adaptable to diverse experimental conditions.
+        
+      The DT employs two main model architectures: (1) Gated recurrent unit neural networks for time series forecasting, capturing sequential dependencies in key lung physiology parameters over time; and (2) XGBoost for key hourly lung function parameters. 
+        
+      These models are trained and calibrated to ensure accurate short- and long-term forecasts, with hyperparameter tuning designed to ensure model stability and generalizability.  
+      </p>
+      
+      <div class="grid-two">
+        
+        <figure>
+          <img src="https://github.com/user-attachments/assets/98cfbd0f-f828-4ada-8176-e94477a46ce8" alt="XGBoost Model" />
+          <figcaption>XGBoost Model Architecture </figcaption>
+        </figure>
+        
+        <figure>
+          <img src="https://github.com/user-attachments/assets/410e44c7-bb3c-4483-b2ca-e13040173772" alt="GRU" />
+          <figcaption>GRU Model Architecture </figcaption>
+        </figure>
+        
+      </div>
+
+    </section>
+
+    <!-- Workflow -->
+    <section id="workflow">
+      <h2>DT Workflow</h2>
+      <p>
+      From raw data ingestion to physics-based feature extraction, model training, calibration, and deployment in real-time inference and therapeutics testing.
+      </p>
+      
+      <figure>
+        <img src="https://github.com/user-attachments/assets/b410f185-f584-46e3-aeb0-c8ec4c134da2" alt="Digital Twin Workflow" />
+        <figcaption>Digital twin workflow, assets, and implementation </figcaption>
+      </figure>
+    </section>
+
+    <!-- Deployment -->
+    <section id="deployment">
+      <h2>DT Deployment</h2>
+      <p>
+      Accessible via Docker container, Streamlit Web-based app, Google Colab, and Python, with automated data and model loading, inference, and visualization for local or cloud use.
+      </p>
+      
+      <figure>
+        <img src="https://github.com/user-attachments/assets/8b0a07aa-1c52-4690-8232-671c6c7f58b0" alt="Deployment options" />
+        <figcaption> Digital twin multi-platform deployment </figcaption>
+      </figure>
+    </section>
+
+    <!-- Build Your DT -->
+    <section id="builddt">
+      <h2>Build Your DT</h2>
+      <p>See <a href="https://github.com/Sage-Lab-ai/DT_Lung?tab=readme-ov-file#getting-started" target="_blank" rel="noopener">Getting Started</a> on GitHub for instructions.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> SAGE Lab UHN — <a href="https://github.com/Sage-Lab-ai/DT_Lung" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1), el=document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
