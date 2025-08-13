@@ -99,7 +99,7 @@ https://github.com/user-attachments/assets/5a9f0953-4463-4365-ab75-835a9c625738
 ## Getting Started
 
 <a name="web-based-app-for-non-technical-users"></a>
-### 1. :globe_with_meridians: Web-based App (Code-free Deployment)
+### 1. :globe_with_meridians: Web-based App (Code-free Deployment + Tutorial)
 The web-app offers an easy-to-follow, code-free user interface for seamless DT development that can be tailored to lung-specific conditions at the tip of your finger. <br />
 [🚀 Launch DT Web-app](https://dt-lung.streamlit.app/)
 
