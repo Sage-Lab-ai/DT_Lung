@@ -203,12 +203,16 @@ project-root/
 ├── GRU                                      # Pipeline on GRU model training and calibration 
 │   ├── __init__.py  
 │   ├── scripts
+│   │   ├── 20_fold_cv_all.sh                # 20-fold cross-validation for all breath setups and variables
+│   │   ├── lock_all_models.sh               # Train and save models for all breath setups and variables
 │   ├── util
-│   ├── EVLPMultivariateBreathDataset.py
-│   ├── forecast_parameters.py
-│   ├── forecast_parameters_w_pred.py
-│   ├── forecasting_pipeline.py
-│   ├── GRU.py
+│   │   ├── baseline.py                      # Baseline implementation (historical average and moving average)
+│   │   ├── static_feats.py                  # Define the list of static features to include in GRU training
+│   ├── EVLPMultivariateBreathDataset.py     # Custom dataset class for breath-by-breath time-series data with static features
+│   ├── forecast_parameters.py               # Model training for single-stage breath setups (A1_A2, A1_A3, A1A2_A3)
+│   ├── forecast_parameters_w_pred.py        # Performs model training for two-stage breath setups (A1PA2_A3)
+│   ├── forecasting_pipeline.py              # Defines re-usable functions that are used in the training pipelines
+│   ├── GRU.py                               # GRU model class that defines the model architecture
 ├── XGB                                      # Pipeline on XGBoost model training and calibration
 │   ├── __init__.py
 │   ├── BaselineModels.py                    # Baseline model definition
