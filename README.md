@@ -323,7 +323,7 @@ Click **"Optional: Redownload Models and Data"** to try again. Alternatively, yo
 
 ### Docker
 
-Please remember to install Docker on your device and grant permission to Docker scripts (as described in [Running with Docker](https://github.com/Sage-Lab-ai/DT_Lung/edit/main/README.md#running-with-docker)).
+Please remember to install Docker on your device and grant permission to Docker scripts (as described in [Running with Docker](https://github.com/Sage-Lab-ai/DT_Lung/blob/main/README.md#running-with-docker)).
 
 
 ### Colab 
