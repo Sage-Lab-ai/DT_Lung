@@ -32,6 +32,8 @@ Version: 1.0.0
 | IL-1b            | Interleukin-1β (pg/mL)                       | 1.7 [0.03-4.5]   |
 | pca_0 - pca_9    | Lung Xray PC1-10                             | n/a              |
 | Gene Enrichment Scores | Transcriptomics Pathways               | Please refer to GSEA official website: [HALLMARK gene sets](https://www.gsea-msigdb.org/gsea/msigdb/collections.jsp)|
-
+| 70_ (prefix)     | First hour data                              | n/a              |
+| 80_ (prefix)     | Second hour data                             | n/a              |
+| 90_ (prefix)     | Third hour data                              | n/a              |
 
 **Note:** Lung Xray PC values are derived features instead of measured features; no data range available. 
