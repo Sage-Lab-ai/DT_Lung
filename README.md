@@ -216,7 +216,6 @@ project-root/
 │   ├── TemporalOrder.py
 │   ├── TabularForecasting.py
 │   ├── pipelines.py
-│   ├── inference.py
 │   ├── forecasting_pipeline.py
 │   ├── image_gridsearch_static.py   
 │   ├── image_gridsearch_dynamic.py   
