@@ -211,17 +211,16 @@ project-root/
 │   ├── GRU.py
 ├── XGB                                      # Pipeline on XGBoost model training and calibration
 │   ├── __init__.py
-│   ├── BaselineModels.py
-│   ├── Dataset.py
-│   ├── TemporalOrder.py
-│   ├── TabularForecasting.py
-│   ├── pipelines.py
-│   ├── forecasting_pipeline.py
-│   ├── image_gridsearch_static.py   
-│   ├── image_gridsearch_dynamic.py   
-│   ├── image_train_static.py   
-│   ├── image_train_dynamic.py   
-│   ├── utils.py
+│   ├── BaselineModels.py                    # Baseline model definition
+│   ├── Dataset.py                           # Dataset Class
+│   ├── TemporalOrder.py                     # Helper class to parse temporal order in column names
+│   ├── TabularForecasting.py                # Classes for training, evaluation, and output organization
+│   ├── pipelines.py                         # Pipelines and training example            
+│   ├── image_gridsearch_static.py           # Image static DT model hyperparameter grid search
+│   ├── image_gridsearch_dynamic.py          # Image dynamic DT model hyperparameter grid search
+│   ├── image_train_static.py                # Image static DT model training
+│   ├── image_train_dynamic.py               # Image static DT model training
+│   ├── utils.py                             # util functions
 ├── inference
 │   ├── __init__.py
 │   ├── GRU_inference.py                     # Pipeline for all GRU-based model inference
