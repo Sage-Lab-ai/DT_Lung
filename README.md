@@ -234,8 +234,8 @@ project-root/
 ├── docker_run_main.sh                       # Running Docker container for main service on MacOS/Linux
 ├── docker_run_main.bat                      # Running Docker container for main service on Windows
 ├── requirements.txt                         # System requirements
-├── GLOSSARY.md                              # for units, data range references for users, acronyms, and domain terms
-├── docs                                     # for project page html document
+├── GLOSSARY.md                              # For units, data range references for users, acronyms, and domain terms
+├── docs                                     # For project page html document
 ```
 
 ### Naming convention
