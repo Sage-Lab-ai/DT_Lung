@@ -144,11 +144,11 @@ This repository provides ready-to-use helper scripts to launch both the web appl
  
   Run Docker container to host the web-based Streamlit app for a code-free deployment experience of the DT demo: 
   
-  Double-click `docker_run_app.bat` in File Explorer.
+  Double-click `docker_run_app.bat` in File Explorer and click on the Local URL in the terminal to open the app in the browser.
   
   Run Docker container to execute main.py to run the DT demo locally: 
   
-  Double-click `docker_run_main.bat` in File Explorer.
+  Double-click `docker_run_main.bat` in File Explorer and view DT results in `work_dir/DT_Lung/Output` folder.
 
 <a name="python-users"></a>
 ### 4. :snake: Python users
