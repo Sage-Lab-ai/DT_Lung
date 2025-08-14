@@ -120,7 +120,7 @@ All docker images are published on [Docker Hub](https://hub.docker.com/u/sagelab
 
 This repository provides ready-to-use helper scripts to launch both the web application and the main.py in Docker containers.
 
-  #### For MacOS/Linux users:
+  #### For macOS/Linux users:
   
   To grant execute permission to Docker start scripts, please run:
    ````
