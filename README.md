@@ -313,20 +313,20 @@ We provide 4 distinct methods in the [Getting Started](#getting-started) section
 <a name="troubleshooting-errors"></a>
 ## 🛠️ Troubleshooting Errors (Last Update: Aug 2025)
 
-### Web-app
+### 🌐 Web-app
 
 **HuggingFace Download Issues**
 
 If the model or demo data fails to download from Hugging Face on the first attempt (often due to high request volume). 
 
-Click **"Optional: Redownload Models and Data"** to try again. Alternatively, you can refresh the web page and retry。
+Click **"Optional: Redownload Models and Data"** to try again. Alternatively, you can refresh the web page and retry.
 
-### Docker
+### 🐳 Docker
 
 Please remember to install Docker on your device and grant permission to Docker scripts (as described in [Running with Docker](https://github.com/Sage-Lab-ai/DT_Lung/blob/main/README.md#running-with-docker)).
 
 
-### Colab 
+### 📒 Colab 
 
 **HuggingFace Download Issues**
 
