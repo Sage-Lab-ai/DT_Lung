@@ -52,6 +52,16 @@
 This is the official repository for **Digital Twins of Ex Vivo Human Lungs**. <br />
 
 ---
+## ⚠️**Important Notice**🚧  
+**Steamlit Server Issues (Updated on September 24, 2025)**
+
+Streamlit released a new version on **September 24, 2025 at 5:30 PM**.  
+
+⏳ The web app may be temporarily unavailable while the server updates, but it should be back online shortly.  
+
+🙏 Please wait a moment and try again.
+
+---
 ## Table of Contents
 - [Background and Overview](#background-and-overview)
 - [Getting Started](#getting-started)
@@ -313,7 +323,12 @@ We provide 4 distinct methods in the [Getting Started](#getting-started) section
 <a name="troubleshooting-errors"></a>
 ## 🛠️ Troubleshooting Errors (Last Update: Aug 2025)
 
+<a name="web-app"></a>
 ### 🌐 Web-app
+
+**Steamlit Server Issues**
+
+The web app may be temporarily unavailable while the Streamlit server updates to a new version. Please wait a moment and try again shortly.
 
 **HuggingFace Download Issues**
 
@@ -321,11 +336,12 @@ If the model or demo data fails to download from Hugging Face on the first attem
 
 Click **"Optional: Redownload Models and Data"** to try again. Alternatively, you can refresh the web page and retry.
 
+<a name="docker"></a>
 ### 🐳 Docker
 
 Please remember to install Docker on your device and grant permission to Docker scripts (as described in [Running with Docker](https://github.com/Sage-Lab-ai/DT_Lung/blob/main/README.md#running-with-docker)).
 
-
+<a name="colab"></a>
 ### 📒 Colab 
 
 **HuggingFace Download Issues**
