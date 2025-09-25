@@ -57,9 +57,7 @@ This is the official repository for **Digital Twins of Ex Vivo Human Lungs**. <b
 
 Streamlit released a new version on **September 24, 2025 at 5:30 PM (UTC−4)**.  
 
-⏳ The web app may be temporarily unavailable while the server updates, but it should be back online shortly.  
-
-🙏 Please wait a moment and try again.
+⏳ The web app may be temporarily unavailable while the Streamlit server updates to a new version. Please wait a moment and try again shortly.
 
 ---
 ## Table of Contents
