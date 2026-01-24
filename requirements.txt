@@ -17,3 +17,4 @@ streamlit
 watchdog
 huggingface_hub
 hf_xet
+altair==4.2.2
