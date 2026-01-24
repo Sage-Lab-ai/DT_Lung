@@ -314,7 +314,7 @@ def main():
     finally:
         redownload_huggingface = st.button(
             label="Optional: Redownload Models and Data",
-            icon=":material/refresh:",
+            #icon=":material/refresh:",
             use_container_width=True,
         )
         if redownload_huggingface:
